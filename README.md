@@ -59,3 +59,9 @@ Future iterations will include:
 - Firestore security rules enforcing user-scoped document access
 - Validation constraints to prevent unauthorized data mutation
 - Role-based access logic as feature set expands
+
+## Architectural Principles
+- Stabilize core authentication before expanding feature scope
+- Maintain clear separation between authentication and subscription layers
+- Prefer managed infrastructure to reduce backend operational overhead
+- Design for incremental schema expansion
