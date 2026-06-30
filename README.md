@@ -28,7 +28,7 @@ Full-stack developer responsible for:
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ## System Architecture
-Calm Anchor follows a client-driven architecture built on Firebase-managed infrastructure. 
+Calm Anchor follows a client-driven architecture built on Firebase-managed infrastructure.
 
 The React client application is responsible for:
 - UI rendering and state management
@@ -37,7 +37,7 @@ The React client application is responsible for:
 
 Firebase Authentication manages secure user identity and session persistence across web and mobile environments.
 
-Firestore serves as the primary data store. At the current stage, the database contains a `users` collection composed of authenticated user documents and associated metadata. The schema is intentionally minimal while core authentication and platform stability are being solidified.
+Firestore serves as the primary data store. At the current stage, the database contains a `users` collection composed of authenticated user documents and associated metadata. The schema was intentionally left minimal while core authentication and platform stability was solidified.
 
 The application is configured as:
 - A Firebase Web App for browser deployment
@@ -46,7 +46,7 @@ The application is configured as:
 This architecture enables rapid iteration without maintaining a dedicated backend server while preserving scalability through managed infrastructure.
 
 ## Testing & Deployment Pipeline
-With core authentication stabilized, the project has moved into a quality-and-release phase, establishing a CI/CD pipeline via GitHub Actions to support reliable and repeatable builds across platforms
+With core authentication stabilized, the project has moved into a quality-and-release phase, establishing a CI/CD pipeline via GitHub Actions to support reliable and repeatable builds across platforms.
 
 ### Automated Testing
 - 38 passing unit tests across 9 files, built with Vitest and React Testing Library
@@ -66,7 +66,7 @@ Investigation identified an architectural boundary issue between Firebase Authen
 
 To address this, the system was refactored to:
 - Improve React state structure and authentication flow handling
-- Simplify Firebase configuration by properly registering the application as a Web App.
+- Simplify Firebase configuration by properly registering the application as a Web App
 - Separate authentication gating logic from subscription logic
 - Ensure platform configuration consistency between web and Android builds
 
